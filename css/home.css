@@ -1,0 +1,303 @@
+* {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 148px 10px 148px;
+  gap: 300px;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+  list-style-type: none;
+  color: black;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-top: 10px;
+  /* margin-left: -15px;
+  margin-right: -23px; */
+}
+
+[class*="col-"] {
+  margin-top: 10px;
+
+  /* padding-left: 10px;
+  padding-right: 10px; */
+}
+
+.col-1 {
+  width: 8.333333%;
+  position: relative;
+  display: inline-block;
+}
+
+.col-2 {
+  width: 16.6666%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  /* width: 33.333333%; */
+  width: 33.333333%;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333333%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.333333%;
+}
+
+.col-11 {
+  width: 91.666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  width: 9%;
+}
+
+.border {
+  padding-top: 30px;
+  border-bottom: 4px groove;
+  text-align: center;
+}
+
+p {
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* Qtt btn */
+.quantity {
+  display: inline-block;
+}
+
+.quantity .input-text.qty {
+  width: 35px;
+  height: 39px;
+  padding: 0 5px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #efefef;
+}
+
+.quantity.buttons_added {
+  text-align: left;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.quantity.buttons_added input {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+  padding: 7px 10px 8px;
+  height: 41px;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+  border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+  border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+  background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+  outline: none;
+}
+
+.card {
+}
+
+.card-info {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.card-price {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.card-buttons {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.card-button-2 {
+  width: 45%;
+  background-color: #eb2039;
+  border: none;
+  color: white;
+  line-height: 34px;
+}
+
+.card-button-1 {
+  width: 45%;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  line-height: 34px;
+}
+
+.category-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.category {
+  width: 250px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.category-info {
+  text-align: center;
+  font-size: 16px;
+  color: #007a4c;
+  font-weight: 510;
+}
+
+.p-footer {
+  color: #007a4c;
+  font-size: 16px;
+  text-align: justify;
+  list-style-type: none;
+}
+
+.text-footer {
+  text-align: justify;
+  color: #007a4c;
+  font-size: 16px;
+}
+
+.p-footer {
+  text-align: center;
+}
+
+.p-header {
+  width: 90px;
+  color: black;
+}
+
+.title-footer {
+  padding-top: 6px;
+  color: #007a4c;
+  font-size: 16px;
+  font-weight: 600;
+}
+.ul-footer {
+  text-align: center;
+}
+
+.left {
+  text-align: end;
+  color: #007a4c;
+}
+
+footer {
+  background-color: #e8e8e8;
+}
+
+.footer-icon {
+  padding-right: 65px;
+}
+
+.fa {
+  padding-right: 10px;
+}
