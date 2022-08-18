@@ -28,6 +28,9 @@
               src="https://www.laviewater.com/media/logo/default/logo_120X41.png"
               alt=""
             />
+            <a href="javascript:void(0);" class="toggle" onclick="myFunction()">
+              <i class="fa fa-bars" style="color: black"></i
+            ></a>
           </div>
           <div class="col-4">
             <div class="navigation">
@@ -49,6 +52,13 @@
     </header>
 
     <div class="container">
+      <div class="topnav">
+        <div id="toggle-bar">
+          <a href="#news">Sản phẩm</a>
+          <a href="#contact">Giới thiệu</a>
+          <a href="#about">Liên hệ</a>
+        </div>
+      </div>
       <div class="row">
         <div class="col-12">
           <img
@@ -282,5 +292,16 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("toggle-bar");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
