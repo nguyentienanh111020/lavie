@@ -43,7 +43,23 @@
           </div>
           <div class="col-4">
             <div class="icon">
-              <i class="fa fa-search" style="font-size: 24px"></i>
+              <a href="javascript:void(0);" onclick="searchBar()">
+                <i
+                  class="fa fa-search"
+                  style="font-size: 24px; position: relative; color: black"
+                ></i
+              ></a>
+              <div id="search-bar-container">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm..."
+                  name="search"
+                  class="search-bar"
+                />
+                <a href=""
+                  ><i class="fa fa-search" style="font-size: 16px"></i
+                ></a>
+              </div>
               <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
             </div>
           </div>
@@ -59,6 +75,7 @@
           <a href="#about">Liên hệ</a>
         </div>
       </div>
+
       <div class="row">
         <div class="col-12">
           <img
@@ -223,35 +240,32 @@
       </div>
       <div class="category-container row">
         <div class="col-4-category">
-          <a href="#">
-            <div class="category-pic">
-              <img
-                src="https://www.laviewater.com/media/wysiwyg/category-1.png"
-                alt=""
-              />
-            </div>
+          <a href="#" class="category-pic">
+            <img
+              class="cate-pic"
+              src="https://www.laviewater.com/media/wysiwyg/category-1.png"
+              alt=""
+            />
           </a>
           <div class="category-info">NƯỚC KHOÁNG THIÊN NHIÊN BÌNH LỚN</div>
         </div>
         <div class="col-4-category">
-          <a href="#">
-            <div class="category-pic">
-              <img
-                src="https://www.laviewater.com/media/wysiwyg/category-2.png"
-                alt=""
-              />
-            </div>
+          <a href="#" class="category-pic">
+            <img
+              class="cate-pic"
+              src="https://www.laviewater.com/media/wysiwyg/category-2.png"
+              alt=""
+            />
           </a>
           <div class="category-info">NƯỚC KHOÁNG THIÊN NHIÊN CHAI NHỎ</div>
         </div>
         <div class="col-4-category">
-          <a href="#">
-            <div class="category-pic">
-              <img
-                src="https://www.laviewater.com/media/wysiwyg/category-3.png"
-                alt=""
-              />
-            </div>
+          <a href="#" class="category-pic">
+            <img
+              class="cate-pic"
+              src="https://www.laviewater.com/media/wysiwyg/category-3.png"
+              alt=""
+            />
           </a>
           <div class="category-info">NƯỚC UỐNG VỊ TRÁI CÂY CÓ GA</div>
         </div>
@@ -259,7 +273,7 @@
     </div>
 
     <footer>
-      <div class="">
+      <div class="container">
         <div class="row">
           <div class="col-4">
             <img
@@ -300,6 +314,15 @@
           x.style.display = "none";
         } else {
           x.style.display = "block";
+        }
+      }
+
+      function searchBar() {
+        const x = document.getElementById("search-bar-container");
+        if (x.style.display === "none") {
+          x.style.display = "flex";
+        } else {
+          x.style.display = "none";
         }
       }
     </script>
