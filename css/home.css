@@ -233,7 +233,7 @@ p {
 
 .category {
   width: 250px;
-  justify-content: space-between;
+
   padding: 20px;
 }
 
@@ -243,7 +243,10 @@ p {
   color: #007a4c;
   font-weight: 510;
 }
-
+.category-pic {
+  width: 80%;
+  justify-content: center;
+}
 .p-footer {
   color: #007a4c;
   font-size: 16px;
@@ -303,7 +306,13 @@ footer {
   display: none;
 }
 
-@media (min-width: 400px) and (max-width: 1238px) {
+.col-4-category {
+  width: 33.33333%;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 1238px) {
   .navigation {
     display: none;
   }
@@ -320,7 +329,7 @@ footer {
   }
 }
 
-@media (max-width: 1189px) and (min-width: 400px) {
+@media (max-width: 1189px) and (min-width: 300px) {
   .col-3 {
     width: 50%;
   }
@@ -341,6 +350,12 @@ footer {
   .text-footer {
     font-size: 12px;
   }
+  .fa-bars {
+    padding-right: 0px;
+  }
+  .category-info {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 798px) {
@@ -348,7 +363,7 @@ footer {
     width: 100%;
   }
   .category-info {
-    font-size: 14px;
+    font-size: 10px;
   }
   .text-footer {
     display: none;
@@ -358,6 +373,35 @@ footer {
   }
   .footer-icon {
     font-size: 0px;
+  }
+  .col-4-category {
+    width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  .card-button-1 {
+    width: 100px;
+    height: 32px;
+  }
+  .card-button-2 {
+    width: 100px;
+    height: 32px;
+  }
+  .text-footer2 {
+    font-size: 8px;
+  }
+  .footer-icon {
+    padding: 0px;
+  }
+  .fa-facebook-f::before {
+    font-size: 11px;
+  }
+  .fa-youtube-play::before {
+    font-size: 11px;
+  }
+  .fa-twitter::before {
+    font-size: 11px;
   }
 }
 
