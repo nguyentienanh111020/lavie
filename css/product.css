@@ -4,6 +4,13 @@
   font-size: 14px;
 }
 
+body {
+  margin: 0;
+}
+
+header {
+  padding-top: 10px;
+}
 .navigation {
   display: flex;
   flex-direction: row;
@@ -176,10 +183,29 @@ p {
 
 footer {
   background-color: #e8e8e8;
+  bottom: 0;
+  left: 0;
+}
+
+/*btn footer*/
+.button-footer {
+  justify-content: center;
+  border-radius: 40px;
+  background-color: #007a4c;
+  border-color: #007a4c;
+  font-size: 1em;
+  padding: 1rem 2.25rem;
+  padding-left: 2.8em;
+  padding-right: 2.8em;
+  color: white;
+}
+.btn {
+  text-align: center;
 }
 
 .footer-icon {
   padding-right: 65px;
+  padding-bottom: 10px;
 }
 
 .fa {
@@ -242,7 +268,7 @@ footer {
   .card-buttons {
     justify-content: space-between;
   }
-  .card-button-1 {
+  /* .card-button-1 {
     width: 30%;
     padding: 1px;
     font-size: 10px;
@@ -251,9 +277,10 @@ footer {
     width: 30%;
     padding: 1px;
     font-size: 10px;
-  }
+  } */
   .text-footer {
     font-size: 12px;
+    padding-left: 20px;
   }
   .fa-bars {
     padding-right: 0px;
@@ -275,12 +302,21 @@ footer {
     display: none;
   }
   .text-footer2 {
-    font-size: 14px;
+    /* font-size: 14px; */
+    display: none;
   }
   .footer-icon {
-    font-size: 0px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
   }
   .col-4-category {
+    width: 100%;
+  }
+  .col-4-footer {
+    width: 50%;
+  }
+  .col-4-footer2 {
     width: 100%;
   }
 }
@@ -288,18 +324,31 @@ footer {
 @media (max-width: 415px) {
   .text-footer2 {
     font-size: 8px;
+    padding-top: 0px;
   }
   .footer-icon {
-    padding: 0px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 40px;
   }
   .fa-facebook-f::before {
-    font-size: 11px;
+    font-size: 30px;
   }
   .fa-youtube-play::before {
-    font-size: 11px;
+    font-size: 30px;
   }
   .fa-twitter::before {
-    font-size: 11px;
+    font-size: 30px;
+  }
+  .hotline {
+    width: 200px;
+  }
+  .btn {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .button-footer {
+    padding: 10px;
   }
 }
 
@@ -447,7 +496,7 @@ ul.breadcrumb li a:hover {
 }
 
 /*product page*/
-@media (max-width: 945px) {
+@media (max-width: 1079px) {
   .porto-container {
     display: none;
   }
@@ -464,9 +513,9 @@ ul.breadcrumb li a:hover {
     width: 50%;
   }
   .card-button-1 {
-    font-size: 8px;
+    font-size: 10px;
   }
   .card-button-2 {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
