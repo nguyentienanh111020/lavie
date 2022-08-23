@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -165,6 +165,15 @@ footer {
   }
   .col-4-footer2 {
     width: 100%;
+  }
+  .fa-facebook-f::before {
+    font-size: 30px;
+  }
+  .fa-youtube-play::before {
+    font-size: 30px;
+  }
+  .fa-twitter::before {
+    font-size: 30px;
   }
 }
 
