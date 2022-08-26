@@ -4,12 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>LIÊN HỆ</title>
+    <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
-    <div include-html="header.html"></div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <a href="index.html">
+              <img
+                class="logo"
+                src="https://www.laviewater.com/media/logo/default/logo_120X41.png"
+                alt=""
+              />
+            </a>
+            <a href="javascript:void(0);" class="toggle" onclick="myFunction()">
+              <i class="fa fa-bars" style="color: black"></i
+            ></a>
+          </div>
+          <div class="col-4">
+            <div class="navigation">
+              <ul class="navigation">
+                <a href="product.html" class="p-header"><li>SẢN PHẨM</li></a>
+                <a href="about.html" class="p-header"><li>GIỚI THIỆU</li></a>
+                <a href="contact.html" class="p-header"
+                  ><li style="color: #eb2039">LIÊN HỆ</li></a
+                >
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="icon">
+              <a href="javascript:void(0);" onclick="searchBar()">
+                <i
+                  class="fa fa-search"
+                  style="font-size: 24px; position: relative; color: black"
+                ></i
+              ></a>
+              <div id="search-bar-container">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm..."
+                  name="search"
+                  class="search-bar"
+                />
+                <a href=""
+                  ><i class="fa fa-search" style="font-size: 16px"></i
+                ></a>
+              </div>
+              <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="topnav">
+        <div id="toggle-bar">
+          <a href="product.html">Sản phẩm</a>
+          <a href="about.html">Giới thiệu</a>
+          <a href="contact.html">Liên hệ</a>
+        </div>
+      </div>
+    </div>
     <div class="contact-container">
+      <ul class="breadcrumb">
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="contact.html">LIÊN HỆ</a></li>
+      </ul>
       <div class="row">
         <div class="col-12 contact-banner">
           <img src="images/PC_Contact_us_VI.jpg" alt="" />
@@ -19,15 +83,15 @@
         <div class="form">
           <div class="" style="padding-left: 30px">
             <h1 class="red">Tên</h1>
-            <input class="contact-input" type="text" />
+            <input class="contact-input" type="text" id="name" />
             <h1 class="red">Email</h1>
-            <input type="text" name="" id="" class="contact-input" />
+            <input type="text" name="" id="email" class="contact-input" />
             <h1>Số Điện thoại</h1>
             <input type="text" class="contact-input" />
-            <h1>Nhập nội dung</h1>
-            <input type="text" class="contact-input2" />
+            <h1 class="red">Nhập nội dung</h1>
+            <input type="text" class="contact-input2" id="content" />
             <br />
-            <button class="send-contact">Gửi</button>
+            <button class="send-contact" onclick="inputBtn()">Gửi</button>
           </div>
         </div>
         <div class="info">

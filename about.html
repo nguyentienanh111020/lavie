@@ -4,14 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>GIỚI THIỆU</title>
     <link rel="stylesheet" href="footer.html" />
     <link rel="stylesheet" href="header.html" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
 
   <body>
-    <div include-html="header.html"></div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <a href="index.html">
+              <img
+                class="logo"
+                src="https://www.laviewater.com/media/logo/default/logo_120X41.png"
+                alt=""
+              />
+            </a>
+            <a href="javascript:void(0);" class="toggle" onclick="myFunction()">
+              <i class="fa fa-bars" style="color: black"></i
+            ></a>
+          </div>
+          <div class="col-4">
+            <div class="navigation">
+              <ul class="navigation">
+                <a href="product.html" class="p-header"><li>SẢN PHẨM</li></a>
+                <a href="about.html" class="p-header"
+                  ><li style="color: #eb2039">GIỚI THIỆU</li></a
+                >
+                <a href="contact.html" class="p-header"><li>LIÊN HỆ</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="icon">
+              <a href="javascript:void(0);" onclick="searchBar()">
+                <i
+                  class="fa fa-search"
+                  style="font-size: 24px; position: relative; color: black"
+                ></i
+              ></a>
+              <div id="search-bar-container">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm..."
+                  name="search"
+                  class="search-bar"
+                />
+                <a href=""
+                  ><i class="fa fa-search" style="font-size: 16px"></i
+                ></a>
+              </div>
+              <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="topnav">
+        <div id="toggle-bar">
+          <a href="product.html">Sản phẩm</a>
+          <a href="about.html">Giới thiệu</a>
+          <a href="contact.html">Liên hệ</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="about.html">GIỚI THIỆU</a></li>
+      </ul>
+    </div>
     <img src="images/LaVie_bannerWeb_VE-06.jpg" alt="" style="width: 100%" />
+
     <div include-html="footer.html"></div>
   </body>
   <script src="js/script.js"></script>

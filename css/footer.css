@@ -19,50 +19,13 @@ body {
   flex-wrap: wrap;
 }
 
-.col-4 {
+.col-4-footer,
+.col-4-footer2 {
   width: 33.333333%;
-}
-
-.col-5 {
-  width: 41.666667%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.333333%;
-}
-
-.col-8 {
-  width: 66.666667%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.333333%;
-}
-
-.col-11 {
-  width: 91.666667%;
-}
-
-.col-12 {
-  width: 100%;
 }
 
 img {
   max-width: 100%;
-}
-
-p {
-  font-size: 1.125rem;
-  letter-spacing: -0.02em;
-  font-weight: 600;
 }
 
 /* footer */
@@ -80,6 +43,11 @@ p {
   font-size: 16px;
 }
 
+.text-footer2 {
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 16px;
+}
 .p-footer {
   text-align: center;
 }
@@ -116,14 +84,10 @@ footer {
   padding-left: 2.8em;
   padding-right: 2.8em;
   color: white;
+  cursor: pointer;
 }
 .btn {
   text-align: center;
-}
-
-.footer-icon {
-  padding-right: 65px;
-  padding-bottom: 10px;
 }
 
 .fa {
@@ -138,8 +102,10 @@ footer {
 
 @media (max-width: 1189px) and (min-width: 300px) {
   .text-footer {
-    font-size: 12px;
-    padding-left: 20px;
+    font-size: 14px;
+  }
+  .text-footer2 {
+    font-size: 14px;
   }
   .fa-bars {
     padding-right: 0px;
@@ -148,11 +114,10 @@ footer {
 
 @media (max-width: 768px) {
   .text-footer {
-    display: none;
+    display: block;
   }
   .text-footer2 {
-    /* font-size: 14px; */
-    display: none;
+    display: block;
   }
   .footer-icon {
     display: flex;
@@ -167,20 +132,25 @@ footer {
     width: 100%;
   }
   .fa-facebook-f::before {
-    font-size: 30px;
+    font-size: 20px;
   }
   .fa-youtube-play::before {
-    font-size: 30px;
+    font-size: 20px;
   }
-  .fa-twitter::before {
-    font-size: 30px;
+  .fa-instagram::before {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 415px) {
+  .btn {
+    padding-bottom: 20px;
+  }
+  .col-4-footer {
+    width: 100%;
+  }
   .text-footer2 {
-    font-size: 8px;
-    padding-top: 0px;
+    padding-bottom: 5px;
   }
   .footer-icon {
     padding-bottom: 10px;
@@ -193,7 +163,7 @@ footer {
   .fa-youtube-play::before {
     font-size: 20px;
   }
-  .fa-twitter::before {
+  .fa-instagram::before {
     font-size: 20px;
   }
   .hotline {
@@ -204,6 +174,39 @@ footer {
     padding-top: 10px;
   }
   .button-footer {
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
   }
+}
+
+/*footer fixing*/
+footer {
+  padding: 20px 0 20px 0;
+}
+
+.text-footer {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.ft-icon {
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #007a4c;
+  color: white;
+  transition: 0.3s;
+}
+
+.ft-icon:hover,
+.button-footer:hover {
+  background-color: red;
+}
+
+.button-footer {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-icon-container {
+  padding-bottom: 10px;
 }

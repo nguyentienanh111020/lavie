@@ -49,3 +49,21 @@ function includeHTML() {
 }
 
 includeHTML();
+
+function inputBtn() {
+  var myInput = document.getElementById("name");
+  var myInput2 = document.getElementById("email");
+  var myInput3 = document.getElementById("content");
+  if (
+    myInput &&
+    myInput.value &&
+    myInput2 &&
+    myInput.value &&
+    myInput3 &&
+    myInput3.value
+  ) {
+    alert("Bạn đã gửi liên hệ thành công");
+  } else {
+    alert("Bạn hãy điền đầy đủ những thông tin cần thiết ");
+  }
+}

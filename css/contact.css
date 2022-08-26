@@ -1,3 +1,7 @@
+/* [class*="col-"] {
+  margin-bottom: 10px;
+} */
+
 .contact-banner {
   max-width: 80%;
   text-align: center;
@@ -49,6 +53,13 @@
   padding: 15px 25px 15px 25px;
   color: white;
   text-align: center;
+  width: 95%;
+  cursor: pointer;
+}
+
+button:active:enabled {
+  background: #007a4c;
+  cursor: pointer;
 }
 
 .contact-detail {
