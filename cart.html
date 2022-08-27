@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIỎ HÀNG</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GIỎ HÀNG</title>
+        <link rel="stylesheet" href="footer.html" />
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" href="css/cart.css" />
+      </head>
+
+      <body>
+        <header>
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <a href="index.html">
+                  <img
+                    class="logo"
+                    src="https://www.laviewater.com/media/logo/default/logo_120X41.png"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="javascript:void(0);"
+                  class="toggle"
+                  onclick="myFunction()"
+                >
+                  <i class="fa fa-bars" style="color: black"></i
+                ></a>
+              </div>
+              <div class="col-4">
+                <div class="navigation">
+                  <ul class="navigation">
+                    <a href="product.html" class="p-header"
+                      ><li>SẢN PHẨM</li></a
+                    >
+                    <a href="about.html" class="p-header"
+                      ><li>GIỚI THIỆU</li></a
+                    >
+                    <a href="contact.html" class="p-header"><li>LIÊN HỆ</li></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="icon">
+                  <a href="javascript:void(0);" onclick="searchBar()">
+                    <i
+                      class="fa fa-search"
+                      style="font-size: 24px; position: relative; color: black"
+                    ></i
+                  ></a>
+                  <div id="search-bar-container">
+                    <input
+                      type="text"
+                      placeholder="Tìm kiếm..."
+                      name="search"
+                      class="search-bar"
+                    />
+                    <a href="search-result.html" style="color: black"
+                      ><i class="fa fa-search" style="font-size: 16px"></i
+                    ></a>
+                  </div>
+                  <a href="cart.html" style="color: black">
+                    <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="topnav">
+            <div id="toggle-bar">
+              <a href="product.html">Sản phẩm</a>
+              <a href="about.html">Giới thiệu</a>
+              <a href="contact.html">Liên hệ</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ul class="breadcrumb">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="cart.html">GIỎ HÀNG</a></li>
+          </ul>
+          <div class="row">
+            <div class="col-8-cart">
+              <table cellspacing="0">
+                <tr>
+                  <th class="col-item">Sản phẩm</th>
+                  <th></th>
+                  <th class="col-price">Đơn giá</th>
+                  <th class="col-qty">Số lượng</th>
+                  <th class="col-subtotal">Thành tiền</th>
+                </tr>
+
+                <tr>
+                  <td class="item-pic">
+                    <img src="images/350ml.jpg" alt="" />
+                  </td>
+                  <td class="item-name">
+                    Nước khoáng thiên nhiên La Vie 19L (Bình)
+                  </td>
+                  <td class="item-price">64.000 VND</td>
+                  <td class="item-qty">
+                    <div class="quantity buttons_added">
+                      <input type="button" value="-" class="minus" /><input
+                        type="number"
+                        step="1"
+                        min="1"
+                        max=""
+                        name="quantity"
+                        value="1"
+                        title="Qty"
+                        class="input-text qty text"
+                        size="4"
+                        pattern=""
+                        inputmode=""
+                      /><input type="button" value="+" class="plus" />
+                    </div>
+                  </td>
+                  <td class="item-subtotal">129.000 VND</td>
+                </tr>
+
+                <tr>
+                  <td class="item-pic">
+                    <img src="images/350ml.jpg" alt="" />
+                  </td>
+                  <td class="item-name" width="250">
+                    Nước khoáng thiên nhiên La Vie 19L (Bình)
+                  </td>
+                  <td class="item-price">64.000 VND</td>
+                  <td class="item-qty">
+                    <div class="quantity buttons_added">
+                      <input type="button" value="-" class="minus" /><input
+                        type="number"
+                        step="1"
+                        min="1"
+                        max=""
+                        name="quantity"
+                        value="1"
+                        title="Qty"
+                        class="input-text qty text"
+                        size="4"
+                        pattern=""
+                        inputmode=""
+                      /><input type="button" value="+" class="plus" />
+                    </div>
+                  </td>
+                  <td class="item-subtotal">129.000 VND</td>
+                </tr>
+
+                <tr>
+                  <td class="item-pic">
+                    <img src="images/350ml.jpg" alt="" />
+                  </td>
+                  <td class="item-name" width="250">
+                    Nước khoáng thiên nhiên La Vie 19L (Bình)
+                  </td>
+                  <td class="item-price">64.000 VND</td>
+                  <td class="item-qty">
+                    <div class="quantity buttons_added">
+                      <input type="button" value="-" class="minus" /><input
+                        type="number"
+                        step="1"
+                        min="1"
+                        max=""
+                        name="quantity"
+                        value="1"
+                        title="Qty"
+                        class="input-text qty text"
+                        size="4"
+                        pattern=""
+                        inputmode=""
+                      /><input type="button" value="+" class="plus" />
+                    </div>
+                  </td>
+                  <td class="item-subtotal">129.000 VND</td>
+                </tr>
+              </table>
+              <div class="cart-action">
+                <button class="btn-action" value="Áp dụng giảm giá">
+                  CẬP NHẬT GIỎ HÀNG
+                </button>
+                <button class="btn-action" value="Áp dụng giảm giá">
+                  TIẾP TỤC MUA SẮM
+                </button>
+              </div>
+            </div>
+
+            <div class="col-4-cart">
+              <div class="cart-summary">
+                <strong class="summary-title">TÓM TẮT </strong>
+                <div class="total-cart">
+                  <p class="total-cart-item">Tổng giỏ hàng</p>
+                  <p class="total-cart-item">387.000 VND</p>
+                </div>
+                <div class="total-order">
+                  <strong
+                    class=""
+                    style="display: flex; justify-content: center"
+                  >
+                    Tổng đơn đặt hàng
+                  </strong>
+                  <strong class="total-order-item">387.000 VND</strong>
+                </div>
+                <a href="cart.html" class="buy-now"> TIẾN HÀNH THANH TOÁN</a>
+              </div>
+              <div class="coupon">
+                <input
+                  type="text"
+                  class="input-coupon"
+                  placeholder="Nhập mã giảm giá"
+                />
+                <button class="btn-coupon" value="Áp dụng giảm giá">
+                  ÁP DỤNG GIẢM GIÁ
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div include-html="footer.html"></div>
+      </body>
+      <script src="js/script.js"></script>
+    </html>
+  </body>
+</html>

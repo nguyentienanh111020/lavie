@@ -1,0 +1,166 @@
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1pt solid black;
+}
+
+.col-item {
+  text-align: start;
+  padding-left: 15px;
+}
+
+.col-item,
+.col-price,
+.col-qty,
+.col-subtotal {
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.item-pic {
+  width: 25%;
+}
+
+.item-name {
+  text-align: center;
+  /* padding: 0px 30px 0px 30px; */
+}
+
+.item-price {
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.item-qty {
+  text-align: center;
+  padding: 0px 5px 0px 5px;
+}
+
+.item-subtotal {
+  text-align: center;
+  padding: 0px 0px 0px 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cart-summary {
+  border: 1px solid;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.summary-title {
+  font-weight: 600;
+}
+
+.total-cart {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #777777;
+}
+
+.total-cart-item {
+  font-size: 14px;
+}
+
+.total-order {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+}
+
+.total-order-item {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.buy-now {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px 20px 30px;
+  background: red;
+  color: #ffffff;
+  border: 1px solid #d9d9d9;
+}
+
+.coupon {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.input-coupon {
+  height: 50px;
+  width: 70%;
+  text-indent: 10px;
+}
+
+.btn-coupon {
+  width: 40%;
+  height: 56px;
+  padding: 10px;
+  color: #898989;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cart-action {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-action {
+  width: 30%;
+  height: 56px;
+  padding: 10px;
+  color: #898989;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.col-8-cart {
+  width: 66.6666%;
+}
+
+.col-4-cart {
+  width: 33.333333%;
+}
+
+@media (max-width: 928px) and (min-width: 415px) {
+  .col-4-cart {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 928px) {
+  .col-8-cart {
+    width: 100%;
+    padding: 10px;
+  }
+  .col-4-cart {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .cart-summary {
+    margin-right: 30px;
+  }
+  .coupon {
+    margin-right: 30px;
+  }
+  .col-subtotal,
+  .item-subtotal {
+    display: none;
+  }
+}
