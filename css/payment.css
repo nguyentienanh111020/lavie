@@ -1,0 +1,146 @@
+/*breadcrumb*/
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li + li:before {
+  padding: 20px;
+  color: black;
+  content: ">";
+}
+ul.breadcrumb li a {
+  text-decoration: none;
+  font-size: 14 px;
+  color: black;
+}
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* input[type="text"],
+input[type="password"] {
+  width: 100%;
+}
+
+input {
+  autocomplete="off"
+} */
+
+.payment-input {
+  width: 100%;
+  border-color: rgba(0, 0, 0, 0.09);
+  height: auto;
+  padding: 8px 12px;
+}
+
+.red::after {
+  content: "*";
+  color: #e02b27;
+  font-size: 1em;
+  margin: 0 0 0 0.25em;
+}
+
+.address-detail {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+select {
+  width: 32%;
+  height: 40px;
+}
+
+.payment-method {
+  width: 100%;
+}
+
+.send-contact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: red;
+  border: none;
+  text-transform: uppercase;
+  padding: 15px 25px 15px 25px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.payment-img {
+  width: 100%;
+}
+
+.payment-imgs {
+  text-align: center;
+  width: 111px;
+}
+
+.payment-proname {
+  width: 50%;
+  text-align: center;
+  padding: 15px 20px 0px 20px;
+}
+
+.payment-proprice {
+  text-align: center;
+  font-weight: 700;
+}
+
+.col-5 {
+  padding-left: 30px;
+}
+
+.coupon {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.input-coupon {
+  height: 50px;
+  width: 70%;
+  text-indent: 10px;
+}
+
+.btn-coupon {
+  width: 40%;
+  height: 50px;
+  padding: 10px;
+  color: #898989;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 752px) {
+  .col-7 {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+  }
+  .col-5 {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+  }
+  .coupon {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THANH TOÁN</title>
+    <link rel="stylesheet" href="footer.html" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.laviewater.com/static/version1654191140/frontend/Lavie/water/default/Magento_Theme/favicon.ico"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <a href="index.html">
+              <img
+                class="logo"
+                src="https://www.laviewater.com/media/logo/default/logo_120X41.png"
+                alt=""
+              />
+            </a>
+            <a href="javascript:void(0);" class="toggle" onclick="myFunction()">
+              <i class="fa fa-bars" style="color: black"></i
+            ></a>
+          </div>
+          <div class="col-4">
+            <div class="navigation">
+              <ul class="navigation">
+                <a href="product.html" class="p-header"><li>SẢN PHẨM</li></a>
+                <a href="about.html" class="p-header"><li>GIỚI THIỆU</li></a>
+                <a href="contact.html" class="p-header"><li>LIÊN HỆ</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="icon">
+              <a href="javascript:void(0);" onclick="searchBar()">
+                <i
+                  class="fa fa-search"
+                  style="font-size: 24px; position: relative; color: black"
+                ></i
+              ></a>
+              <div id="search-bar-container">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm..."
+                  name="search"
+                  class="search-bar"
+                />
+                <a href="search-result.html" style="color: black"
+                  ><i class="fa fa-search" style="font-size: 16px"></i
+                ></a>
+              </div>
+              <a href="cart.html" style="color: black">
+                <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="topnav">
+        <div id="toggle-bar">
+          <a href="product.html">Sản phẩm</a>
+          <a href="about.html">Giới thiệu</a>
+          <a href="contact.html">Liên hệ</a>
+        </div>
+      </div>
+
+      <ul class="breadcrumb">
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="cart.html">GIỎ HÀNG</a></li>
+        <li><a href="#">THANH TOÁN</a></li>
+      </ul>
+
+      <div class="row">
+        <div class="col-7">
+          <h1 class="red">Tên</h1>
+          <input class="payment-input" type="text" id="name" />
+          <h1 class="red">Email</h1>
+          <input class="payment-input" type="text" id="name" />
+          <h1 class="red">Số điện thoại</h1>
+          <input class="payment-input" type="text" id="name" />
+          <h1 class="red">Địa chỉ</h1>
+          <input class="payment-input" type="text" id="name" />
+          <div class="row address-detail">
+            <select name="cars" id="cars">
+              <option value="volvo">Chọn tỉnh / thành</option>
+              <option value="saab">Hà Nội</option>
+              <option value="opel">Hồ Chí Minh</option>
+              <option value="audi">Đà Nẵng</option>
+            </select>
+
+            <select name="cars" id="cars">
+              <option value="volvo">Chọn quận / huyện</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+
+            <select name="cars" id="cars">
+              <option value="volvo">Chọn phường / xã</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+          <select class="payment-method" name="cars" id="cars">
+            <option value="volvo">Phương thức thanh toán</option>
+            <option value="saab">Trực tiếp</option>
+            <option value="opel">Chuyển khoản</option>
+          </select>
+          <button class="send-contact" onclick="inputBtn()">Gửi</button>
+        </div>
+        <div class="col-5">
+          <table style="table-layout: fixed">
+            <tr>
+              <td class="payment-imgs">
+                <img
+                  src="images/hod_binh19l_2020_new_1_.jpg"
+                  alt=""
+                  class="payment-img"
+                />
+              </td>
+              <td class="payment-proname">
+                Nước khoáng thiên nhiên La Vie 19L (Bình)
+              </td>
+              <td class="payment-proprice">129.000 VND</td>
+            </tr>
+            <tr>
+              <td class="payment-imgs">
+                <img class="payment-img" src="images/viva-18.5.jpg" alt="" />
+              </td>
+              <td class="payment-proname">
+                Nước uống đóng bình ViVa 18.5 L (Bình)
+              </td>
+              <td class="payment-proprice">129.000 VND</td>
+            </tr>
+            <tr>
+              <td class="payment-imgs">
+                <img class="payment-img" src="images/mix_vi_1.png" alt="" />
+              </td>
+              <td class="payment-proname">
+                La Vie Sparkling Mix vị trái cây (24 lon/Thùng)
+              </td>
+              <td class="payment-proprice">129.000 VND</td>
+            </tr>
+
+            <tr>
+              <td
+                colspan="2"
+                class="payment-proname"
+                style="text-align: start; padding-top: 10px; font-size: 16px"
+              >
+                Tổng đơn đặt hàng
+              </td>
+              <td class="payment-proprice" style="font-size: 16px">
+                387.000 VND
+              </td>
+            </tr>
+          </table>
+          <div class="coupon">
+            <input
+              type="text"
+              class="input-coupon"
+              placeholder="Nhập mã giảm giá"
+            />
+            <button class="btn-coupon" value="Áp dụng giảm giá">
+              ÁP DỤNG GIẢM GIÁ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div include-html="footer.html"></div>
+    <script src="js/script.js">
+      function myFunction() {
+        var x = document.getElementById("toggle-bar");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      function searchBar() {
+        const x = document.getElementById("search-bar-container");
+        if (x.style.display === "none") {
+          x.style.display = "flex";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
