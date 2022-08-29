@@ -210,3 +210,36 @@ footer {
 .footer-icon-container {
   padding-bottom: 10px;
 }
+
+.fa.fa-bars {
+  font-size: 24px;
+}
+
+.icon {
+  padding-right: 10px;
+  padding-top: 14px;
+}
+
+.my-unusual-element[badge="0"]:after {
+  display: initial;
+}
+
+[badge]:after {
+  background: red;
+  border-radius: 30px;
+  color: #fff;
+  content: attr(badge);
+  font-size: 11px;
+  margin-top: -10px;
+  min-width: 20px;
+  padding: 2px;
+  position: absolute;
+  text-align: center;
+  margin-left: -25px;
+}
+
+[badge^="-"]:after,
+[badge="0"]:after,
+[badge=""]:after {
+  display: none;
+}
