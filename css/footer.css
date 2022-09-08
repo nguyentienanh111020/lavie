@@ -109,6 +109,7 @@ footer {
   }
   .fa-bars {
     padding-right: 0px;
+    font-size: 18px;
   }
 }
 
@@ -211,9 +212,9 @@ footer {
   padding-bottom: 10px;
 }
 
-.fa.fa-bars {
+/* .fa.fa-bars {
   font-size: 24px;
-}
+} */
 
 .icon {
   padding-right: 10px;

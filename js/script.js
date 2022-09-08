@@ -121,12 +121,10 @@ function result() {
   alert("Thanh Toán Thành Công");
 }
 
-// function addToCart() {
-//   alert("Hi");
-// }
-
-document.body.onclick = function (ev) {
-  if (ev.target.getAttribute("class") == "card-button-1") {
-    let qtyval = document;
-  }
-};
+function addToCart() {
+  var elem = document.getElementsByClassName("input-text qty text");
+  var values = elem[0].value;
+  console.log(values);
+  console.log(document.getElementById("badge").getAttribute("badge"));
+  document.getElementById("badge").setAttribute("badge", values);
+}
