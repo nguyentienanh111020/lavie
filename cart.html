@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GIỎ HÀNG</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.laviewater.com/static/version1654191140/frontend/Lavie/water/default/Magento_Theme/favicon.ico"
+    />
   </head>
   <body>
     <!DOCTYPE html>
@@ -72,7 +77,12 @@
                     ></a>
                   </div>
                   <a href="cart.html" style="color: black">
-                    <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                    <span id="badge" badge="3">
+                      <i
+                        class="fa fa-shopping-cart"
+                        style="font-size: 24px"
+                      ></i>
+                    </span>
                   </a>
                 </div>
               </div>
@@ -129,15 +139,15 @@
                       /><input type="button" value="+" class="plus" />
                     </div>
                   </td>
-                  <td class="item-subtotal">129.000 VND</td>
+                  <td class="item-subtotal">64.000 VND</td>
                 </tr>
 
                 <tr>
                   <td class="item-pic">
-                    <img src="images/350ml.jpg" alt="" />
+                    <img src="images/viva-18.5.jpg" alt="" />
                   </td>
                   <td class="item-name" width="250">
-                    Nước khoáng thiên nhiên La Vie 19L (Bình)
+                    Nước uống đóng bình ViVa 18.5 L (Bình)
                   </td>
                   <td class="item-price">64.000 VND</td>
                   <td class="item-qty">
@@ -157,17 +167,17 @@
                       /><input type="button" value="+" class="plus" />
                     </div>
                   </td>
-                  <td class="item-subtotal">129.000 VND</td>
+                  <td class="item-subtotal">64.000 VND</td>
                 </tr>
 
                 <tr>
                   <td class="item-pic">
-                    <img src="images/350ml.jpg" alt="" />
+                    <img src="images/mix_vi_1.png" alt="" />
                   </td>
                   <td class="item-name" width="250">
-                    Nước khoáng thiên nhiên La Vie 19L (Bình)
+                    La Vie Sparkling Mix vị trái cây (24 lon/Thùng)
                   </td>
-                  <td class="item-price">64.000 VND</td>
+                  <td class="item-price">203.500 VND</td>
                   <td class="item-qty">
                     <div class="quantity buttons_added">
                       <input type="button" value="-" class="minus" /><input
@@ -185,14 +195,17 @@
                       /><input type="button" value="+" class="plus" />
                     </div>
                   </td>
-                  <td class="item-subtotal">129.000 VND</td>
+                  <td class="item-subtotal">203.500 VND</td>
                 </tr>
               </table>
               <div class="cart-action">
-                <button class="btn-action" value="Áp dụng giảm giá">
+                <button class="btn-action" onclick="addToCart()">
                   CẬP NHẬT GIỎ HÀNG
                 </button>
-                <button class="btn-action" value="Áp dụng giảm giá">
+                <button
+                  class="btn-action"
+                  onclick="location.href='product.html'"
+                >
                   TIẾP TỤC MUA SẮM
                 </button>
               </div>
@@ -203,7 +216,7 @@
                 <strong class="summary-title">TÓM TẮT </strong>
                 <div class="total-cart">
                   <p class="total-cart-item">Tổng giỏ hàng</p>
-                  <p class="total-cart-item">387.000 VND</p>
+                  <p class="total-cart-item">331.500 VND</p>
                 </div>
                 <div class="total-order">
                   <strong
@@ -212,7 +225,7 @@
                   >
                     Tổng đơn đặt hàng
                   </strong>
-                  <strong class="total-order-item">387.000 VND</strong>
+                  <strong class="total-order-item">331.500 VND</strong>
                 </div>
                 <a href="payment.html" class="buy-now"> TIẾN HÀNH THANH TOÁN</a>
               </div>
@@ -222,7 +235,13 @@
                   class="input-coupon"
                   placeholder="Nhập mã giảm giá"
                 />
-                <button class="btn-coupon" value="Áp dụng giảm giá">
+                <button
+                  class="btn-coupon"
+                  value="Áp dụng giảm giá"
+                  onclick="{
+                  alert('Nhập mã giảm giá thành công')
+                }"
+                >
                   ÁP DỤNG GIẢM GIÁ
                 </button>
               </div>

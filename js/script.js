@@ -122,9 +122,10 @@ function result() {
 }
 
 function addToCart() {
-  var elem = document.getElementsByClassName("input-text qty text");
-  var values = elem[0].value;
-  console.log(values);
-  console.log(document.getElementById("badge").getAttribute("badge"));
-  document.getElementById("badge").setAttribute("badge", values);
+  var arr = document.getElementsByName("quantity");
+  var total = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (parseInt(arr[i].value)) total += parseInt(arr[i].value);
+  }
+  document.getElementById("badge").setAttribute("badge", total);
 }

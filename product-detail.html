@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>CHI TIẾT SẢN PHẨM</title>
     <link rel="stylesheet" href="footer.html" />
     <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/product-detail.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.laviewater.com/static/version1654191140/frontend/Lavie/water/default/Magento_Theme/favicon.ico"
+    />
   </head>
   <body>
     <header>
@@ -54,7 +59,9 @@
                 ></a>
               </div>
               <a href="cart.html" style="color: black">
-                <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                <span id="badge" badge="0">
+                  <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                </span>
               </a>
             </div>
           </div>
@@ -70,251 +77,261 @@
             <a href="contact.html">Liên hệ</a>
           </div>
         </div>
-      <ul class="breadcrumb">
-        <li><a href="index.html">TRANG CHỦ</a></li>
-        <li><a href="product.html">SẢN PHẨM</a></li>
-        <li><a href="product.html">NƯỚC KHOÁNG THIÊN NHIÊN - CHAI NHỎ</a></li>
-        <li>
-          <a href="product-detail.html"
-            >NƯỚC KHOÁNG THIÊN NHIÊU LA VIE 19L (BÌNH)</a
-          >
-        </li>
-      </ul>
-      <div class="row">
-        <div class="col-6-prodetail">
-          <div class="product-detail-pic">
-            <img
-              src="images/la_vie_24_6.png"
-              width="95%"
-              height="310px"
-              alt=""
-              style="border: 1px solid #d9d9d9; object-fit: cover"
-            />
+        <ul class="breadcrumb">
+          <li><a href="index.html">TRANG CHỦ</a></li>
+          <li><a href="product.html">SẢN PHẨM</a></li>
+          <li><a href="product.html">NƯỚC KHOÁNG THIÊN NHIÊN - CHAI NHỎ</a></li>
+          <li>
+            <a href="product-detail.html"
+              >NƯỚC KHOÁNG THIÊN NHIÊU LA VIE 19L (BÌNH)</a
+            >
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-6-prodetail">
+            <div class="product-detail-pic">
+              <img
+                src="images/la_vie_24_6.png"
+                width="95%"
+                height="310px"
+                alt=""
+                style="border: 1px solid #d9d9d9; object-fit: cover"
+              />
+            </div>
           </div>
-        </div>
-        <div class="col-6-prodetail">
-          <div class="detail-container">
-            <div class="detail-title">
-              Nước khoáng thiên nhiên La Vie 500ml (24 chai + Tặng 6 chai/thùng)
-            </div>
-            <div class="detail-price">65.000 VND</div>
-            <div class="detail"><b>Phân loại:</b> Nước tinh khiết</div>
-            <div class="detail"><b>Quy cách:</b> 19L/Bình</div>
-            <div class="detail"><b>Xuất xứ:</b> Việt Nam</div>
-            <div class="detail" style="padding-bottom: 10px">
-              <b>Trạng thái:</b> Còn hàng
-            </div>
-            <div class="buttons">
-              <div class="quantity buttons_added">
-                <input type="button" value="-" class="minus" /><input
-                  type="number"
-                  step="1"
-                  min="1"
-                  max=""
-                  name="quantity"
-                  value="1"
-                  title="Qty"
-                  class="input-text qty text"
-                  size="4"
-                  pattern=""
-                  inputmode=""
-                /><input type="button" value="+" class="plus" />
+          <div class="col-6-prodetail">
+            <div class="detail-container">
+              <div class="detail-title">
+                Nước khoáng thiên nhiên La Vie 500ml (24 chai + Tặng 6
+                chai/thùng)
               </div>
-              <a href="#" class="add-to-cart">
-                <i class="fa fa-shopping-cart" style="font-size: 20px"></i>
-                THÊM VÀO GIỎ
-              </a>
-              <a href="cart.html" class="buy-now"> MUA NHANH </a>
+              <div class="detail-price">65.000 VND</div>
+              <div class="detail"><b>Phân loại:</b> Nước tinh khiết</div>
+              <div class="detail"><b>Quy cách:</b> 19L/Bình</div>
+              <div class="detail"><b>Xuất xứ:</b> Việt Nam</div>
+              <div class="detail" style="padding-bottom: 10px">
+                <b>Trạng thái:</b> Còn hàng
+              </div>
+              <div class="buttons">
+                <div class="quantity buttons_added">
+                  <input type="button" value="-" class="minus" /><input
+                    type="number"
+                    step="1"
+                    min="1"
+                    max=""
+                    name="quantity"
+                    value="0"
+                    title="Qty"
+                    class="input-text qty text"
+                    size="4"
+                    pattern=""
+                    inputmode=""
+                  /><input type="button" value="+" class="plus" />
+                </div>
+                <a href="#" class="add-to-cart" onclick="addToCart()">
+                  <i class="fa fa-shopping-cart" style="font-size: 20px"></i>
+                  THÊM VÀO GIỎ
+                </a>
+                <a href="cart.html" class="buy-now"> MUA NHANH </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="detail-pics">
-            <img
-              class="detail-pic"
-              src="images/la_vie_24_6.png"
-              alt=""
-              style="margin-right: 10px"
-            />
-            <img class="detail-pic" src="images/la_vie_24_6.png" alt="" />
+          <div class="col-12">
+            <div class="detail-pics">
+              <img
+                class="detail-pic"
+                src="images/la_vie_24_6.png"
+                alt=""
+                style="margin-right: 10px"
+              />
+              <img class="detail-pic" src="images/la_vie_24_6.png" alt="" />
+            </div>
           </div>
-        </div>
 
-        <div class="col-12 product-detail-title"><p>CHI TIẾT</p></div>
-        <div class="col-8-prodetail">
-          <div class="product-detail-para">
-            <p>
-              KHUYẾN MÃI HOT: TẶNG THÊM 1 BỘ THIẾT BỊ TIỆN LỢI CHO KHÁCH HÀNG
-              MỚI**
-            </p>
-            <p>
-              **Chỉ áp dụng cho đơn hàng đầu tiên Nước khoáng thiên nhiên La Vie
-              bình 19L là sự lựa chọn tuyệt vời để giải khát, bổ sung nước &
-              khoáng chất và giữ cho cơ thể luôn đủ nước suốt ngày dài làm việc
-              tại văn phòng hoặc khi ở nhà cùng gia đình.
-            </p>
-            <p>
-              Không đường & không calo, nước khoáng thiên nhiên La Vie với 6
-              khoáng chất thiết yếu là sự lựa chọn hoàn hảo để thay thế các loại
-              nước giải khát chứa nhiều đường, giúp bạn và gia đình duy trì cuộc
-              sống khỏe mạnh.
-            </p>
-            <p>
-              Mỗi bình nước khoáng thiên nhiên La Vie đều được đóng chai tại
-              nguồn & phải trải qua quá trình quản lý chất lượng bao gồm 12 bước
-              nghiêm ngặt theo tiêu chuẩn của tập đoàn Nestle, đảm bảo các quy
-              định vệ sinh và giữ được chất lượng & thành phần khoáng cơ bản của
-              nước.
-            </p>
-            <p>
-              La Vie là thương hiệu nước khoáng số 1 tại Việt Nam* <br />
-              *Theo AC Nielsen về sản lượng năm 2019
-            </p>
+          <div class="col-12 product-detail-title"><p>CHI TIẾT</p></div>
+          <div class="col-8-prodetail">
+            <div class="product-detail-para">
+              <p>
+                KHUYẾN MÃI HOT: TẶNG THÊM 1 BỘ THIẾT BỊ TIỆN LỢI CHO KHÁCH HÀNG
+                MỚI**
+              </p>
+              <p>
+                **Chỉ áp dụng cho đơn hàng đầu tiên Nước khoáng thiên nhiên La
+                Vie bình 19L là sự lựa chọn tuyệt vời để giải khát, bổ sung nước
+                & khoáng chất và giữ cho cơ thể luôn đủ nước suốt ngày dài làm
+                việc tại văn phòng hoặc khi ở nhà cùng gia đình.
+              </p>
+              <p>
+                Không đường & không calo, nước khoáng thiên nhiên La Vie với 6
+                khoáng chất thiết yếu là sự lựa chọn hoàn hảo để thay thế các
+                loại nước giải khát chứa nhiều đường, giúp bạn và gia đình duy
+                trì cuộc sống khỏe mạnh.
+              </p>
+              <p>
+                Mỗi bình nước khoáng thiên nhiên La Vie đều được đóng chai tại
+                nguồn & phải trải qua quá trình quản lý chất lượng bao gồm 12
+                bước nghiêm ngặt theo tiêu chuẩn của tập đoàn Nestle, đảm bảo
+                các quy định vệ sinh và giữ được chất lượng & thành phần khoáng
+                cơ bản của nước.
+              </p>
+              <p>
+                La Vie là thương hiệu nước khoáng số 1 tại Việt Nam* <br />
+                *Theo AC Nielsen về sản lượng năm 2019
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-4-prodetail">
-          <img src="images/h_nh_tr_nh_gi_t_NKTN-_La_Vie.jpg" alt="" />
-        </div>
+          <div class="col-4-prodetail">
+            <img src="images/h_nh_tr_nh_gi_t_NKTN-_La_Vie.jpg" alt="" />
+          </div>
 
-        <div class="col-12 product-detail-title">
-          <p>THƯỜNG ĐƯỢC MUA CÙNG</p>
-        </div>
-        <div class="col-3-prodetail">
-          <div class="card">
-            <div class="card-img">
-              <img
-                src="https://www.laviewater.com/media/catalog/product/cache/ec00a4b7c834648e5225fe566febb9b7/h/o/hod_binh19l_2020_new_1_.jpg"
-                alt=""
-              />
-            </div>
-            <div class="card-info">
-              <div class="card-title">
-                Nước khoáng thiên nhiên La Vie <br />19L (Bình)
+          <div class="col-12 product-detail-title">
+            <p>THƯỜNG ĐƯỢC MUA CÙNG</p>
+          </div>
+          <div class="col-3-prodetail">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="https://www.laviewater.com/media/catalog/product/cache/ec00a4b7c834648e5225fe566febb9b7/h/o/hod_binh19l_2020_new_1_.jpg"
+                  alt=""
+                />
               </div>
-              <div class="card-price">64.000 VND</div>
-              <div class="quantity buttons_added">
-                <input type="button" value="-" class="minus" /><input
-                  type="number"
-                  step="1"
-                  min="1"
-                  max=""
-                  name="quantity"
-                  value="1"
-                  title="Qty"
-                  class="input-text qty text"
-                  size="4"
-                  pattern=""
-                  inputmode=""
-                /><input type="button" value="+" class="plus" />
-              </div>
-              <div class="card-buttons">
-                <a href="#" class="card-button-1">Thêm vào giỏ</a>
-                <a href="#" class="card-button-2">Mua nhanh</a>
+              <div class="card-info">
+                <div class="card-title">
+                  Nước khoáng thiên nhiên La Vie <br />19L (Bình)
+                </div>
+                <div class="card-price">64.000 VND</div>
+                <div class="quantity buttons_added">
+                  <input type="button" value="-" class="minus" /><input
+                    type="number"
+                    step="1"
+                    min="1"
+                    max=""
+                    name="quantity"
+                    value="0"
+                    title="Qty"
+                    class="input-text qty text"
+                    size="4"
+                    pattern=""
+                    inputmode=""
+                  /><input type="button" value="+" class="plus" />
+                </div>
+                <div class="card-buttons">
+                  <a href="#" class="card-button-1" onclick="addToCart()"
+                    >Thêm vào giỏ</a
+                  >
+                  <a href="payment.html" class="card-button-2">Mua nhanh</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-3-prodetail">
-          <div class="card">
-            <div class="card-img">
-              <img
-                src="https://www.laviewater.com/media/catalog/product/cache/ec00a4b7c834648e5225fe566febb9b7/h/o/hod_binh19l_2020_new_1_.jpg"
-                alt=""
-              />
-            </div>
-            <div class="card-info">
-              <div class="card-title">
-                Nước khoáng thiên nhiên La Vie <br />19L (Bình)
+          <div class="col-3-prodetail">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="https://www.laviewater.com/media/catalog/product/cache/ec00a4b7c834648e5225fe566febb9b7/h/o/hod_binh19l_2020_new_1_.jpg"
+                  alt=""
+                />
               </div>
-              <div class="card-price">64.000 VND</div>
-              <div class="quantity buttons_added">
-                <input type="button" value="-" class="minus" /><input
-                  type="number"
-                  step="1"
-                  min="1"
-                  max=""
-                  name="quantity"
-                  value="1"
-                  title="Qty"
-                  class="input-text qty text"
-                  size="4"
-                  pattern=""
-                  inputmode=""
-                /><input type="button" value="+" class="plus" />
-              </div>
-              <div class="card-buttons">
-                <a href="#" class="card-button-1">Thêm vào giỏ</a>
-                <a href="#" class="card-button-2">Mua nhanh</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3-prodetail">
-          <div class="card">
-            <div class="card-img">
-              <img
-                src="https://www.laviewater.com/media/catalog/product/cache/ec00a4b7c834648e5225fe566febb9b7/h/o/hod_binh19l_2020_new_1_.jpg"
-                alt=""
-              />
-            </div>
-            <div class="card-info">
-              <div class="card-title">
-                Nước khoáng thiên nhiên La Vie <br />19L (Bình)
-              </div>
-              <div class="card-price">64.000 VND</div>
-              <div class="quantity buttons_added">
-                <input type="button" value="-" class="minus" /><input
-                  type="number"
-                  step="1"
-                  min="1"
-                  max=""
-                  name="quantity"
-                  value="1"
-                  title="Qty"
-                  class="input-text qty text"
-                  size="4"
-                  pattern=""
-                  inputmode=""
-                /><input type="button" value="+" class="plus" />
-              </div>
-              <div class="card-buttons">
-                <a href="#" class="card-button-1">Thêm vào giỏ</a>
-                <a href="#" class="card-button-2">Mua nhanh</a>
+              <div class="card-info">
+                <div class="card-title">
+                  Nước khoáng thiên nhiên La Vie <br />19L (Bình)
+                </div>
+                <div class="card-price">64.000 VND</div>
+                <div class="quantity buttons_added">
+                  <input type="button" value="-" class="minus" /><input
+                    type="number"
+                    step="1"
+                    min="1"
+                    max=""
+                    name="quantity"
+                    value="0"
+                    title="Qty"
+                    class="input-text qty text"
+                    size="4"
+                    pattern=""
+                    inputmode=""
+                  /><input type="button" value="+" class="plus" />
+                </div>
+                <div class="card-buttons">
+                  <a href="#" class="card-button-1" onclick="addToCart()"
+                    >Thêm vào giỏ</a
+                  >
+                  <a href="payment.html" class="card-button-2">Mua nhanh</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-3-prodetail">
-          <div class="card">
-            <div class="card-img">
-              <img
-                src="https://www.laviewater.com/media/catalog/product/cache/ec00a4b7c834648e5225fe566febb9b7/h/o/hod_binh19l_2020_new_1_.jpg"
-                alt=""
-              />
+          <div class="col-3-prodetail">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="https://www.laviewater.com/media/catalog/product/cache/ec00a4b7c834648e5225fe566febb9b7/h/o/hod_binh19l_2020_new_1_.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-info">
+                <div class="card-title">
+                  Nước khoáng thiên nhiên La Vie <br />19L (Bình)
+                </div>
+                <div class="card-price">64.000 VND</div>
+                <div class="quantity buttons_added">
+                  <input type="button" value="-" class="minus" /><input
+                    type="number"
+                    step="1"
+                    min="1"
+                    max=""
+                    name="quantity"
+                    value="0"
+                    title="Qty"
+                    class="input-text qty text"
+                    size="4"
+                    pattern=""
+                    inputmode=""
+                  /><input type="button" value="+" class="plus" />
+                </div>
+                <div class="card-buttons">
+                  <a href="#" class="card-button-1" onclick="addToCart()"
+                    >Thêm vào giỏ</a
+                  >
+                  <a href="payment.html" class="card-button-2">Mua nhanh</a>
+                </div>
+              </div>
             </div>
-            <div class="card-info">
-              <div class="card-title">
-                Nước khoáng thiên nhiên La Vie <br />19L (Bình)
+          </div>
+          <div class="col-3-prodetail">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="https://www.laviewater.com/media/catalog/product/cache/ec00a4b7c834648e5225fe566febb9b7/h/o/hod_binh19l_2020_new_1_.jpg"
+                  alt=""
+                />
               </div>
-              <div class="card-price">64.000 VND</div>
-              <div class="quantity buttons_added">
-                <input type="button" value="-" class="minus" /><input
-                  type="number"
-                  step="1"
-                  min="1"
-                  max=""
-                  name="quantity"
-                  value="1"
-                  title="Qty"
-                  class="input-text qty text"
-                  size="4"
-                  pattern=""
-                  inputmode=""
-                /><input type="button" value="+" class="plus" />
-              </div>
-              <div class="card-buttons">
-                <a href="#" class="card-button-1">Thêm vào giỏ</a>
-                <a href="#" class="card-button-2">Mua nhanh</a>
+              <div class="card-info">
+                <div class="card-title">
+                  Nước khoáng thiên nhiên La Vie <br />19L (Bình)
+                </div>
+                <div class="card-price">64.000 VND</div>
+                <div class="quantity buttons_added">
+                  <input type="button" value="-" class="minus" /><input
+                    type="number"
+                    step="1"
+                    min="1"
+                    max=""
+                    name="quantity"
+                    value="0"
+                    title="Qty"
+                    class="input-text qty text"
+                    size="4"
+                    pattern=""
+                    inputmode=""
+                  /><input type="button" value="+" class="plus" />
+                </div>
+                <div class="card-buttons">
+                  <a href="#" class="card-button-1" onclick="addToCart()"
+                    >Thêm vào giỏ</a
+                  >
+                  <a href="payment.html" class="card-button-2">Mua nhanh</a>
+                </div>
               </div>
             </div>
           </div>
@@ -323,5 +340,10 @@
     </div>
     <div include-html="footer.html"></div>
   </body>
+  <script
+    data-require="jquery@3.1.1"
+    data-semver="3.1.1"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+  ></script>
   <script src="js/script.js"></script>
 </html>

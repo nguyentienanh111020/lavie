@@ -63,7 +63,9 @@
                 ></a>
               </div>
               <a href="cart.html" style="color: black">
-                <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                <span id="badge" badge="3">
+                  <i class="fa fa-shopping-cart" style="font-size: 24px"></i>
+                </span>
               </a>
             </div>
           </div>
@@ -96,28 +98,6 @@
           <input class="payment-input" type="text" id="name" />
           <h1>Địa chỉ</h1>
           <input class="payment-input" type="text" id="name" />
-          <!-- <div class="row address-detail">
-            <select name="cars" id="cars">
-              <option value="volvo">Chọn tỉnh / thành</option>
-              <option value="saab">Hà Nội</option>
-              <option value="opel">Hồ Chí Minh</option>
-              <option value="audi">Đà Nẵng</option>
-            </select>
-
-            <select name="cars" id="cars">
-              <option value="volvo">Chọn quận / huyện</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
-            </select>
-
-            <select name="cars" id="cars">
-              <option value="volvo">Chọn phường / xã</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
-            </select>
-          </div> -->
           <h1>Hình thức thanh toán</h1>
           <select class="payment-method" name="cars" id="cars">
             <option value="volvo">Phương thức thanh toán</option>
@@ -143,7 +123,7 @@
               <td class="payment-proname">
                 Nước khoáng thiên nhiên La Vie 19L (Bình)
               </td>
-              <td class="payment-proprice">129.000 VND</td>
+              <td class="payment-proprice">64.000 VND</td>
             </tr>
             <tr>
               <td class="payment-imgs">
@@ -154,7 +134,7 @@
               <td class="payment-proname">
                 Nước uống đóng bình ViVa 18.5 L (Bình)
               </td>
-              <td class="payment-proprice">129.000 VND</td>
+              <td class="payment-proprice">64.000 VND</td>
             </tr>
             <tr>
               <td class="payment-imgs">
@@ -165,7 +145,7 @@
               <td class="payment-proname">
                 La Vie Sparkling Mix vị trái cây (24 lon/Thùng)
               </td>
-              <td class="payment-proprice">129.000 VND</td>
+              <td class="payment-proprice">203.500 VND</td>
             </tr>
 
             <tr>
@@ -177,7 +157,7 @@
                 Tổng đơn đặt hàng
               </td>
               <td class="payment-proprice" style="font-size: 16px">
-                387.000 VND
+                331.500 VND
               </td>
             </tr>
           </table>
@@ -187,7 +167,12 @@
               class="input-coupon"
               placeholder="Nhập mã giảm giá"
             />
-            <button class="btn-coupon" value="Áp dụng giảm giá">
+            <button
+              class="btn-coupon"
+              onclick="{
+              alert('Nhập mã giảm giá thành công')
+            }"
+            >
               ÁP DỤNG GIẢM GIÁ
             </button>
           </div>
