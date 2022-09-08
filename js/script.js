@@ -51,9 +51,11 @@ function includeHTML() {
 includeHTML();
 
 function inputBtn() {
-  var myInput = document.getElementById("name");
-  var myInput2 = document.getElementById("email");
-  var myInput3 = document.getElementById("content");
+  let myInput = document.getElementById("name");
+  let myInput2 = document.getElementById("email");
+  let myInput3 = document.getElementById("content");
+  let valid = document.getElementById("valid");
+
   if (
     myInput &&
     myInput.value &&
@@ -62,9 +64,11 @@ function inputBtn() {
     myInput3 &&
     myInput3.value
   ) {
-    alert("Bạn đã gửi liên hệ thành công");
+    valid.innerHTML = "Chúng tôi đã nhận được liên hệ của bạn.";
+    valid.style.color = "green";
   } else {
-    alert("Bạn hãy điền đầy đủ những thông tin cần thiết ");
+    valid.innerHTML = "Bạn hãy điền đầy đủ những thông tin cần thiết ";
+    valid.style.color = "red";
   }
 }
 
@@ -118,7 +122,38 @@ String.prototype.getDecimals ||
   });
 
 function result() {
-  alert("Thanh Toán Thành Công");
+  let myInput = document.getElementById("name");
+  let myInput2 = document.getElementById("email");
+  let myInput3 = document.getElementById("phone-number");
+  let myInput4 = document.getElementById("address");
+  let myInput5 = document.getElementById("payment");
+
+  if (
+    myInput &&
+    myInput.value &&
+    myInput2 &&
+    myInput.value &&
+    myInput3 &&
+    myInput3.value &&
+    myInput4 &&
+    myInput4.value &&
+    myInput5 &&
+    myInput5.value
+  ) {
+    const paymentContent = document.getElementById("payment-content");
+    paymentContent.innerHTML = "THANH TOÁN THÀNH CÔNG";
+    paymentContent.style.color = "green";
+    paymentContent.style.fontSize = "20px";
+    paymentContent.style.width = "100%";
+    paymentContent.style.justifyContent = "center";
+    const footer = document.querySelector("footer");
+    footer.style.position = "absolute";
+    footer.style.bottom = "0";
+    footer.style.width = "100%";
+  } else {
+    document.getElementById("valid").innerHTML =
+      "VUI LÒNG ĐIỀN ĐẦY ĐỦ THÔNG TIN";
+  }
 }
 
 function addToCart() {
@@ -128,4 +163,9 @@ function addToCart() {
     if (parseInt(arr[i].value)) total += parseInt(arr[i].value);
   }
   document.getElementById("badge").setAttribute("badge", total);
+}
+
+function coupon() {
+  const voucher = document.getElementById("voucher");
+  voucher.innerHTML = "Đã áp dụng mã giảm giá";
 }

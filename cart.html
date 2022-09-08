@@ -212,6 +212,24 @@
             </div>
 
             <div class="col-4-cart">
+              <p
+                id="voucher"
+                style="width: 100%; text-align: center; color: green"
+              ></p>
+              <div class="coupon">
+                <input
+                  type="text"
+                  class="input-coupon"
+                  placeholder="Nhập mã giảm giá"
+                />
+                <button
+                  class="btn-coupon"
+                  value="Áp dụng giảm giá"
+                  onclick="coupon()"
+                >
+                  ÁP DỤNG GIẢM GIÁ
+                </button>
+              </div>
               <div class="cart-summary">
                 <strong class="summary-title">TÓM TẮT </strong>
                 <div class="total-cart">
@@ -228,22 +246,6 @@
                   <strong class="total-order-item">331.500 VND</strong>
                 </div>
                 <a href="payment.html" class="buy-now"> TIẾN HÀNH THANH TOÁN</a>
-              </div>
-              <div class="coupon">
-                <input
-                  type="text"
-                  class="input-coupon"
-                  placeholder="Nhập mã giảm giá"
-                />
-                <button
-                  class="btn-coupon"
-                  value="Áp dụng giảm giá"
-                  onclick="{
-                  alert('Nhập mã giảm giá thành công')
-                }"
-                >
-                  ÁP DỤNG GIẢM GIÁ
-                </button>
               </div>
             </div>
           </div>

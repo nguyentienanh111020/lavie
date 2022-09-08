@@ -88,18 +88,24 @@
         <li><a href="#">THANH TOÁN</a></li>
       </ul>
 
-      <div class="row">
+      <div class="row" id="payment-content">
         <div class="col-7">
+          <h1 id="valid" style="color: red; font-size: 20px"></h1>
           <h1>Tên</h1>
-          <input class="payment-input" type="text" id="name" />
+          <input class="payment-input" type="text" class="valid" id="name" />
           <h1>Email</h1>
-          <input class="payment-input" type="text" id="name" />
+          <input
+            class="payment-input"
+            type="text"
+            class="valid"
+            id="phone-number"
+          />
           <h1>Số điện thoại</h1>
-          <input class="payment-input" type="text" id="name" />
+          <input class="payment-input" type="text" class="valid" id="address" />
           <h1>Địa chỉ</h1>
-          <input class="payment-input" type="text" id="name" />
+          <input class="payment-input" type="text" class="valid" id="email" />
           <h1>Hình thức thanh toán</h1>
-          <select class="payment-method" name="cars" id="cars">
+          <select class="payment-method" name="cars" class="valid" id="payment">
             <option value="volvo">Phương thức thanh toán</option>
             <option value="saab">Trực tiếp</option>
             <option value="opel">Chuyển khoản</option>
@@ -181,6 +187,11 @@
     </div>
 
     <div include-html="footer.html"></div>
+    <script
+      data-require="jquery@3.1.1"
+      data-semver="3.1.1"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+    ></script>
     <script src="js/script.js">
       function myFunction() {
         var x = document.getElementById("toggle-bar");
