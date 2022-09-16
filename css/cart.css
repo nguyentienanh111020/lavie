@@ -120,10 +120,10 @@ tr {
 .cart-action {
   padding-top: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .btn-action {
-  width: 30%;
+  width: 100%;
   height: 56px;
   padding: 10px;
   color: #898989;
@@ -164,4 +164,10 @@ tr {
   .item-subtotal {
     display: none;
   }
+}
+
+#coupon-message {
+  display: flex;
+  justify-content: center;
+  color: green;
 }

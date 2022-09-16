@@ -124,7 +124,12 @@
                   <td class="item-price">64.000 VND</td>
                   <td class="item-qty">
                     <div class="quantity buttons_added">
-                      <input type="button" value="-" class="minus" /><input
+                      <input
+                        type="button"
+                        value="-"
+                        class="minus"
+                        onclick="addToCart2()"
+                      /><input
                         type="number"
                         step="1"
                         min="1"
@@ -132,14 +137,22 @@
                         name="quantity"
                         value="1"
                         title="Qty"
-                        class="input-text qty text"
+                        class="input-text qty text qty1"
                         size="4"
                         pattern=""
                         inputmode=""
-                      /><input type="button" value="+" class="plus" />
+                        onchange="subTotal();total()"
+                      /><input
+                        type="button"
+                        value="+"
+                        class="plus"
+                        onclick="addToCart2()"
+                      />
                     </div>
                   </td>
-                  <td class="item-subtotal">64.000 VND</td>
+                  <td class="item-subtotal" id="subtotal1" value="64">
+                    64.000 VND
+                  </td>
                 </tr>
 
                 <tr>
@@ -152,7 +165,12 @@
                   <td class="item-price">64.000 VND</td>
                   <td class="item-qty">
                     <div class="quantity buttons_added">
-                      <input type="button" value="-" class="minus" /><input
+                      <input
+                        type="button"
+                        value="-"
+                        class="minus"
+                        onclick="addToCart2()"
+                      /><input
                         type="number"
                         step="1"
                         min="1"
@@ -160,14 +178,22 @@
                         name="quantity"
                         value="1"
                         title="Qty"
-                        class="input-text qty text"
+                        class="input-text qty text qty1"
                         size="4"
                         pattern=""
                         inputmode=""
-                      /><input type="button" value="+" class="plus" />
+                        onchange="subTotal1();total()"
+                      /><input
+                        type="button"
+                        value="+"
+                        class="plus"
+                        onclick="addToCart2()"
+                      />
                     </div>
                   </td>
-                  <td class="item-subtotal">64.000 VND</td>
+                  <td class="item-subtotal" id="subtotal2" value="64">
+                    64.000 VND
+                  </td>
                 </tr>
 
                 <tr>
@@ -180,7 +206,12 @@
                   <td class="item-price">203.500 VND</td>
                   <td class="item-qty">
                     <div class="quantity buttons_added">
-                      <input type="button" value="-" class="minus" /><input
+                      <input
+                        type="button"
+                        value="-"
+                        class="minus"
+                        onclick="addToCart2()"
+                      /><input
                         type="number"
                         step="1"
                         min="1"
@@ -188,20 +219,28 @@
                         name="quantity"
                         value="1"
                         title="Qty"
-                        class="input-text qty text"
+                        class="input-text qty text qty1"
                         size="4"
                         pattern=""
                         inputmode=""
-                      /><input type="button" value="+" class="plus" />
+                        onchange="subTotal2();total()"
+                      /><input
+                        type="button"
+                        value="+"
+                        class="plus"
+                        onclick="addToCart2()"
+                      />
                     </div>
                   </td>
-                  <td class="item-subtotal">203.500 VND</td>
+                  <td class="item-subtotal" id="subtotal3" value="203">
+                    203.500 VND
+                  </td>
                 </tr>
               </table>
               <div class="cart-action">
-                <button class="btn-action" onclick="addToCart()">
+                <!-- <button class="btn-action" onclick="addToCart2()">
                   CẬP NHẬT GIỎ HÀNG
-                </button>
+                </button> -->
                 <button
                   class="btn-action"
                   onclick="location.href='product.html'"
@@ -230,11 +269,12 @@
                   ÁP DỤNG GIẢM GIÁ
                 </button>
               </div>
+              <div id="coupon-message"></div>
               <div class="cart-summary">
                 <strong class="summary-title">TÓM TẮT </strong>
                 <div class="total-cart">
                   <p class="total-cart-item">Tổng giỏ hàng</p>
-                  <p class="total-cart-item">331.500 VND</p>
+                  <p class="total-cart-item" id="total-cart">331.500 VND</p>
                 </div>
                 <div class="total-order">
                   <strong
@@ -243,7 +283,9 @@
                   >
                     Tổng đơn đặt hàng
                   </strong>
-                  <strong class="total-order-item">331.500 VND</strong>
+                  <strong class="total-order-item" id="total-order-item"
+                    >331.500 VND</strong
+                  >
                 </div>
                 <a href="payment.html" class="buy-now"> TIẾN HÀNH THANH TOÁN</a>
               </div>

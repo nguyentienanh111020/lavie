@@ -165,7 +165,61 @@ function addToCart() {
   document.getElementById("badge").setAttribute("badge", total);
 }
 
+function addToCart2() {
+  let arr = document.getElementsByName("quantity");
+  let total = 1;
+  for (let i = 0; i < arr.length; i++) {
+    if (parseInt(arr[i].value)) total += parseInt(arr[i].value);
+  }
+  document.getElementById("badge").setAttribute("badge", total);
+}
+
+function subTotal() {
+  let subTotal = document.getElementsByClassName("qty1")[0].value;
+  document.getElementById("subtotal1").innerHTML =
+    (64 * subTotal).toFixed(3) + " VND";
+  document
+    .getElementById("subtotal1")
+    .setAttribute("value", Number(64 * subTotal));
+}
+
+function subTotal1() {
+  let subTotal = document.getElementsByClassName("qty1")[1].value;
+  document.getElementsByClassName("item-subtotal")[1].innerHTML =
+    (64 * subTotal).toFixed(3) + " VND";
+  document
+    .getElementById("subtotal2")
+    .setAttribute("value", Number(64 * subTotal));
+}
+
+function subTotal2() {
+  let subTotal = document.getElementsByClassName("qty1")[2].value;
+  document.getElementsByClassName("item-subtotal")[2].innerHTML =
+    (203 * subTotal).toFixed(3) + " VND";
+  document
+    .getElementById("subtotal3")
+    .setAttribute("value", Number(203 * subTotal));
+}
+
+function total() {
+  let arr = document.getElementsByClassName("item-subtotal");
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (parseInt(arr[i].getAttribute("value")))
+      total += parseInt(arr[i].getAttribute("value"));
+  }
+  document.getElementById("total-cart").innerHTML = total.toFixed(3) + " VND";
+}
+
 function coupon() {
-  const voucher = document.getElementById("voucher");
-  voucher.innerHTML = "Đã áp dụng mã giảm giá";
+  let arr = document.getElementsByClassName("item-subtotal");
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (parseInt(arr[i].getAttribute("value")))
+      total += parseInt(arr[i].getAttribute("value"));
+  }
+  document.getElementById("total-order-item").innerHTML =
+    (total * 0.8).toFixed(3) + " VND";
+  document.getElementById("coupon-message").innerHTML =
+    "<p>Áp dụng thành công mã giảm giá 20%</p>";
 }
