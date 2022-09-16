@@ -150,6 +150,7 @@ function result() {
     footer.style.position = "absolute";
     footer.style.bottom = "0";
     footer.style.width = "100%";
+    document.getElementById("btn-container").style.display = "flex";
   } else {
     document.getElementById("valid").innerHTML =
       "VUI LÒNG ĐIỀN ĐẦY ĐỦ THÔNG TIN";

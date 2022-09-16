@@ -144,3 +144,27 @@ select {
     margin-left: 10px;
   }
 }
+
+.btn-container {
+  display: none;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.btn1 {
+  margin-right: 20px;
+  width: 15%;
+  padding: 15px 0px 15px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn2 {
+  margin-left: 20px;
+  width: 15%;
+  padding: 10px 0px 10px 0px;
+  color: white;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
